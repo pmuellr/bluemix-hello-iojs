@@ -1,0 +1,28 @@
+---
+
+# this file is by `cf push` to determine the settings your your app
+
+applications:
+
+# the name of the app that you will use in `cf` commands
+
+- name:      bluemix-hello-iojs
+
+# the indented values are settings for the app they are indented under
+
+  # this is the host name of your app
+  # modify to make unique across the mybluemix.net domain
+
+  host:      bluemix-hello-iojs-pjm
+
+  # amount of RAM we'll need.  Prolly could get by with less!
+
+  memory:    128M
+
+  # command to invoke
+
+  command:   node server
+
+  # heroku's nodejs buildpack supports io.js >= 1.0.0
+  
+  buildpack: https://github.com/heroku/heroku-buildpack-nodejs.git

@@ -1,0 +1,10 @@
+{
+  "name":      "bluemix-hello-iojs",
+  "engines": {
+    "iojs" : "*"
+  },
+  "dependencies": {
+    "cfenv":   "1.0.x",
+    "express": "4.9.x"
+  }
+}
